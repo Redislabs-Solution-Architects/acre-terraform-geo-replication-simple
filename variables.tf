@@ -15,7 +15,7 @@ variable "acre_cluster_policy" {
 
 variable "acre_deployment_mode" {
   type    = string
-  default = "Incremental"
+  default = "Complete"
 }
 
 variable "acre_eviction_policy" {
