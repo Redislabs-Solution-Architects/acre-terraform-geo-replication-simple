@@ -56,7 +56,3 @@ variable "secondary-region" {
   default     = "westus"
   type        = string
 }
-
-variable "subscription_id" {
-  type = string
-}
