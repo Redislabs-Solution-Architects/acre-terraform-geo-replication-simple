@@ -6,7 +6,7 @@
         {
             "name": "${acre_name_1}",
             "type": "Microsoft.Cache/redisEnterprise",
-            "apiVersion": "2021-03-01",
+            "apiVersion": "2021-02-01-preview",
             "properties": {},
             "location": "${location}",
             "dependsOn": [],
@@ -54,7 +54,7 @@
         {
             "name": "${acre_name_2}",
             "type": "Microsoft.Cache/redisEnterprise",
-            "apiVersion": "2021-03-01",
+            "apiVersion": "2021-02-01-preview",
             "properties": {},
             "location": "${location_2}",
             "dependsOn": [
