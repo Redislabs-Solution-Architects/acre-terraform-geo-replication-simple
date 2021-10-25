@@ -4,13 +4,6 @@
     "parameters": {},
     "resources": [
         {
-            "type": "Microsoft.Resources/resourceGroups",
-            "apiVersion": "2021-04-01",
-            "name": "${resource_group_name}",
-            "location": "${location}",
-            "tags": {}
-        },
-        {
             "name": "${acre_name_1}",
             "type": "Microsoft.Cache/redisEnterprise",
             "apiVersion": "2021-02-01-preview",
@@ -52,7 +45,6 @@
                         }
                     },
                     "dependsOn": [
-                        "Microsoft.Resources/resourceGroups/${resource_group_name}",
                         "Microsoft.Cache/redisEnterprise/${acre_name_1}"
                     ],
                     "tags": {}
