@@ -52,6 +52,7 @@
                         }
                     },
                     "dependsOn": [
+                        "Microsoft.Resources/resourceGroups/${resource_group_name}",
                         "Microsoft.Cache/redisEnterprise/${acre_name_1}"
                     ],
                     "tags": {}
