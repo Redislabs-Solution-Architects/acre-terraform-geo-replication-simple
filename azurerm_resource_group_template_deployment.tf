@@ -17,4 +17,5 @@ resource "azurerm_resource_group_template_deployment" "acre_cluster" {
       subscription_id      = data.azurerm_subscription.current.subscription_id,
       resource_group_name  = format("redisgeek%s", random_string.resource_group_name.result),
   })
+  depends_on = [azurerm_resource_group.resource_group]
 }
