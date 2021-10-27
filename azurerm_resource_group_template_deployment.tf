@@ -2,7 +2,7 @@ resource "azurerm_resource_group_template_deployment" "acre_cluster" {
   name                = "redisgeek-migration"
   resource_group_name = format("redisgeek%s", random_string.resource_group_name.result)
   deployment_mode     = var.acre_deployment_mode
-  template_content = templatefile(format("${path.module}%s",var.acre_template_path_1),
+  template_content = templatefile(format("${path.module}%s", var.acre_template_path_1),
     {
       acre_name_1          = format("%s-%s", random_string.acre_group_name.id, var.primary-region),
       acre_name_2          = format("%s-%s", random_string.acre_group_name.id, var.secondary-region),
