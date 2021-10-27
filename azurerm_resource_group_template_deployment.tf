@@ -1,6 +1,6 @@
 resource "azurerm_resource_group_template_deployment" "acre_cluster" {
   name                = "redisgeek-migration"
-  resource_group_name = random_string.resource_group_name.id
+  resource_group_name = format("redisgeek%s", random_string.resource_group_name.result)
   deployment_mode     = var.acre_deployment_mode
   template_content = templatefile(format("${path.module}%s",var.acre_template_path_1),
     {
@@ -15,6 +15,7 @@ resource "azurerm_resource_group_template_deployment" "acre_cluster" {
       acre_cluster_policy  = var.acre_cluster_policy,
       acre_group_nickname  = random_string.acre_group_name.id,
       subscription_id      = data.azurerm_subscription.current.subscription_id,
-      resource_group_name  = random_string.resource_group_name.id,
+      resource_group_name  = format("redisgeek%s", random_string.resource_group_name.result),
   })
+  depends_on = [azurerm_resource_group.resource_group]
 }
