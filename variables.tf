@@ -25,7 +25,7 @@ variable "acre_eviction_policy" {
 
 variable "acre_template_path_1" {
   description = "Path to ARM template being sourced"
-  default     = "./ARM/ACRE/cluster.json"
+  default     = "/ARM/ACRE/cluster.json"
 }
 
 variable "acre_sku" {
