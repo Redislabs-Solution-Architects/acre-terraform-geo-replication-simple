@@ -7,6 +7,8 @@
 
 [![Terraform CI](https://github.com/redisgeek/acre-terraform-geo-replication-simple/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/redisgeek/acre-terraform-geo-replication-simple/actions/workflows/terraform-ci.yml)
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fredisgeek%2Facre-terraform-geo-replication-simple%2Fmain%2FARM%2FACRE%2Fcluster.json)
+
 # acre-terraform-geo-replication-simple
 ## Deploy Azure Cache for Redis Enterprise (ACRE) in two separate regions with active geo-replication
 
